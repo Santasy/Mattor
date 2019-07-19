@@ -37,6 +37,8 @@ private slots:
 
     void on_b_simb_textChanged();
 
+    void on_tt_prev_clicked();
+
 private:
     Ui::v_principal *ui;
 };

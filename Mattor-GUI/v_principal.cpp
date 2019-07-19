@@ -1,6 +1,7 @@
 #include "v_principal.h"
 #include "ui_v_principal.h"
 #include "v_palabras.h"
+#include "v_visualizacion.h"
 #include <QMessageBox>
 
 #include <string>
@@ -153,10 +154,17 @@ void v_principal::on_tt_finalizar_clicked(){
     v.exec();
 }
 
-void v_principal::on_b_simb_textChanged()
-{
+void v_principal::on_b_simb_textChanged(){
     string simb = ui->b_simb->toPlainText().toStdString();
     if(simb.size() > 1){
         ui->b_simb->document()->setPlainText(QString(simb[0]));
     }
+}
+
+void v_principal::on_tt_prev_clicked(){
+    v_visualizacion v(this);
+    v.setModal(true);
+    v.c_data = c_data;
+    v.showAutomata();
+    v.exec();
 }

@@ -28,14 +28,17 @@ SOURCES += \
         v_principal.cpp \
     estado.cpp \
     core.cpp \
-    v_palabras.cpp
+    v_palabras.cpp \
+    v_visualizacion.cpp
 
 HEADERS += \
         v_principal.h \
     estado.h \
     core.h \
-    v_palabras.h
+    v_palabras.h \
+    v_visualizacion.h
 
 FORMS += \
         v_principal.ui \
-    v_palabras.ui
+    v_palabras.ui \
+    v_visualizacion.ui

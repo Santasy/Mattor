@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>571</width>
-    <height>293</height>
+    <height>302</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,10 +30,10 @@
      <bool>true</bool>
     </property>
     <property name="title">
-     <string>Estado Inicial:</string>
+     <string>1) Estado Inicial:</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <property name="flat">
      <bool>false</bool>
@@ -171,10 +171,10 @@
      <bool>true</bool>
     </property>
     <property name="title">
-     <string>Agregar Estado Final:</string>
+     <string>3) Agregar Estado Final:</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <widget class="QPlainTextEdit" name="b_final">
      <property name="geometry">
@@ -236,10 +236,10 @@
      <bool>true</bool>
     </property>
     <property name="title">
-     <string>Agregar Nueva Transición:</string>
+     <string>2) Agregar Nueva Transición:</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <widget class="QLabel" name="l_inicial_2">
      <property name="geometry">
@@ -418,6 +418,19 @@
     </property>
     <property name="text">
      <string>Finalizar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tt_prev">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>220</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Visualizar Autómata</string>
     </property>
    </widget>
   </widget>
